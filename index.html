@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bimbel Doktor Nanda - Pusat Bimbingan Belajar Berkualitas">
+  <title>Bimbel Doktor Nanda</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #243047;
+      background: #f5f8fc;
+    }
+    header {
+      padding: 28px 16px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #123b70, #1684b8);
+    }
+    header h1 { margin: 0 0 5px; font-size: clamp(1.5rem, 4vw, 2.3rem); }
+    header p { margin: 0; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      padding: 13px 12px;
+      background: #fff;
+      box-shadow: 0 2px 10px #10243a18;
+    }
+    nav a { color: #174b7a; text-decoration: none; font-weight: 700; }
+    nav a:hover { color: #e17b24; }
+    section { padding: 55px max(6%, calc((100% - 1100px)/2)); scroll-margin-top: 65px; }
+    .hero {
+      min-height: 360px;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      color: white;
+      background: linear-gradient(120deg, #123b70e8, #087ca9df),
+                  url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80") center/cover;
+    }
+    .hero h2 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3rem); }
+    .hero p { max-width: 680px; margin: 0 auto 22px; font-size: 1.1rem; }
+    .btn {
+      display: inline-block;
+      padding: 11px 20px;
+      border: 0;
+      border-radius: 8px;
+      color: white;
+      background: #e17b24;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .btn:hover { background: #c96516; }
+    .section-title { margin: 0 0 25px; text-align: center; color: #174b7a; }
+    .about { max-width: 850px; margin: auto; text-align: center; }
+    .program-list, .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .program-card, .feature-card, .peta-box, .kontak-box {
+      padding: 22px;
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 5px 20px #173b5a12;
+    }
+    .program-card h3, .feature-card h3 { margin-top: 0; color: #174b7a; }
+    .features { background: #eaf2f9; }
+    .gallery-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .gallery-list img {
+      display: block;
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #e1e8ef;
+    }
+    .image-note { min-height: 1.4em; margin: 5px 0 0; color: #a33; font-size: .9rem; }
+    .lokasi-kontak {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+    .peta-box iframe { width: 100%; min-height: 300px; border: 0; border-radius: 12px; }
+    .kontak-box a { overflow-wrap: anywhere; color: #12639a; }
+    .kontak-box p { margin-bottom: 3px; font-weight: 700; }
+    footer { padding: 20px; text-align: center; color: white; background: #123b70; }
+    @media (max-width: 600px) {
+      nav { gap: 8px 14px; }
+      section { padding-top: 38px; padding-bottom: 38px; }
+      .gallery-list img { height: 210px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎓 BIMBEL DOKTOR NANDA</h1>
+    <p>Pusat Bimbingan Belajar Berkualitas</p>
+  </header>
+
+  <nav aria-label="Navigasi utama">
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#program">Program</a>
+    <a href="#keunggulan">Keunggulan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section class="hero" id="beranda">
+    <h2>Selamat Datang di Bimbel Doktor Nanda</h2>
+    <p>Membangun Generasi Cerdas, Kreatif, dan Berprestasi. Belajar lebih mudah dengan bimbingan yang berkualitas.</p>
+    <a href="#program" class="btn">Lihat Program Bimbel</a>
+  </section>
+
+  <section id="tentang">
+    <h2 class="section-title">Tentang Kami</h2>
+    <div class="about">
+      <p>Bimbel Doktor Nanda merupakan lembaga bimbingan belajar yang berkomitmen membantu peserta didik meningkatkan kemampuan akademik, mengembangkan potensi diri, serta membangun kepercayaan diri dalam belajar.</p>
+      <p>Kami menyediakan pembelajaran yang terarah dan disesuaikan dengan kebutuhan serta jenjang pendidikan siswa.</p>
+    </div>
+  </section>
+
+  <section id="program">
+    <h2 class="section-title">Program Bimbingan Belajar</h2>
+    <div class="program-list">
+      <article class="program-card"><h3>📚 Calistung</h3><p>Belajar membaca, menulis, dan berhitung untuk PAUD, TK, dan SD.</p></article>
+      <article class="program-card"><h3>🇬🇧 English Course</h3><p>Program Bahasa Inggris, speaking, vocabulary, dan grammar.</p></article>
+      <article class="program-card"><h3>➗ Matematika</h3><p>Pembelajaran Matematika untuk jenjang SD, SMP, dan SMA.</p></article>
+      <article class="program-card"><h3>🔬 IPA dan Sains</h3><p>Memahami konsep IPA melalui pembelajaran yang menarik.</p></article>
+      <article class="program-card"><h3>🎯 Persiapan TKA</h3><p>Bimbingan persiapan Tes Kemampuan Akademik untuk SMP dan SMA.</p></article>
+      <article class="program-card"><h3>👩‍🏫 Privat</h3><p>Pembelajaran fokus 1–2 siswa sesuai kebutuhan belajar.</p></article>
+    </div>
+  </section>
+
+  <section class="features" id="keunggulan">
+    <h2 class="section-title">Keunggulan Kami</h2>
+    <div class="feature-list">
+      <article class="feature-card"><h3>👩‍🏫 Pengajar Berkualitas</h3><p>Pembelajaran didampingi pengajar yang kompeten lulusan S3.</p></article>
+      <article class="feature-card"><h3>📖 Pembelajaran Terarah dan Fokus pada Siswa</h3><p>Materi disesuaikan dengan kebutuhan dan jenjang siswa.</p></article>
+      <article class="feature-card"><h3>⭐ Harga Terjangkau</h3><p>Bimbel Doktor Nanda hadir dengan biaya pendidikan yang ramah di kantong. Dengan SPP hanya Rp50.000 per bulan.</p></article>
+      <article class="feature-card"><h3>🎓 Beragam Program</h3><p>Tersedia pilihan program untuk berbagai jenjang pendidikan.</p></article>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <h2 class="section-title">Galeri Kegiatan</h2>
+    <div class="gallery-list">
+      <div>
+        <img src="images/foto-1.jpeg" alt="Kegiatan pembelajaran" loading="lazy">
+        <p class="image-note" aria-live="polite"></p>
+      </div>
+      <div>
+        <img src="images/foto-2.jpeg" alt="Siswa belajar" loading="lazy">
+        <p class="image-note" aria-live="polite"></p>
+      </div>
+      <div>
+        <img src="images/foto-3.jpeg" alt="Kegiatan pendidikan" loading="lazy">
+        <p class="image-note" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2 class="section-title">Lokasi &amp; Hubungi Kami</h2>
+    <div class="lokasi-kontak">
+      <div class="peta-box">
+        <h3>📍 Lokasi Bimbel Kami</h3>
+        <p>Kunjungi Bimbel Doktor Nanda. Lihat lokasi kami melalui Google Maps.</p>
+        <iframe title="Peta lokasi Bimbel Doktor Nanda" src="https://www.google.com/maps?q=Bimbel+Doktor+Nanda,+Jl.+Griya+Bukit+Jaya,+Tlajung+Udik,+Gunung+Putri,+Bogor,+Jawa+Barat+16962&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <p><a class="btn" href="https://maps.app.goo.gl/5Rgfxh4AiErbWkwh6" target="_blank" rel="noopener noreferrer">📍 Buka Google Maps</a></p>
+      </div>
+      <div class="kontak-box">
+        <h3>☎️ Hubungi Kami</h3>
+        <p>📱 WhatsApp</p>
+        <a href="https://wa.me/6285884009336" target="_blank" rel="noopener noreferrer">0858-8400-9336</a>
+        <p>📸 Instagram</p>
+        <a href="https://www.instagram.com/nh_channel_official/" target="_blank" rel="noopener noreferrer">Instagram Bimbel Doktor Nanda</a>
+        <p>📘 Youtube</p>
+        <a href="https://youtube.com/@nhchannelofficial543" target="_blank" rel="noopener noreferrer">Youtube Bimbel Doktor Nanda</a>
+        <p>📍 Alamat</p>
+        <span>Jl. Griya Bukit Jaya, Tlajung Udik, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16962</span>
+        <p>Form Pendaftaran</p>
+        <a href="https://docs.google.com/forms/d/1QJDirPROn-K50PRgjCiUm508CVsaXEPejPSlcqmHjmo/viewform" target="_blank" rel="noopener noreferrer">Pendaftaran Bimbel Doktor Nanda</a>
+      </div>
+    </div>
+  </section>
+
+  <footer><p>© 2026 Bimbel Doktor Nanda. All Rights Reserved.</p></footer>
+
+  <script>
+    // Memberi pesan yang jelas jika file foto belum ada atau nama file berbeda.
+    document.querySelectorAll(".gallery-list img").forEach((img) => {
+      img.addEventListener("error", () => {
+        const note = img.parentElement.querySelector(".image-note");
+        note.textContent = "Foto belum ditemukan. Periksa nama file dan folder images di GitHub.";
+        img.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
