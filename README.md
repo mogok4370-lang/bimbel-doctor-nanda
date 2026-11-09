@@ -1,2 +1,2 @@
-# bimbel-doctor-nanda
-semua berhak les disini
+# Bimbel-Doktor-Nanda
+Semua berhak les di sini
